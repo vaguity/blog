@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://sean-connolly.com" # the base hostname & protocol for your site
 twitter_username: vaguity
 github_username:  vaguity
+permalink: /:year/:month/:day/:title/
 
 # Build settings
 markdown: kramdown

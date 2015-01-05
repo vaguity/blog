@@ -3,8 +3,7 @@ layout: default
 ---
 
 <article>
-	<h2><a href="#">{{ page.title }}</a></h2>
+	<h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
 	<time># {{ page.date | date: "%b %-d, %Y" }}</time>
-
 	{{ content }}
 </article>

@@ -13,7 +13,7 @@
 body {
 	font-family: $type-body;
 	font-size: 14px;
-	background: $offwhite;
+	background: $blue;
 	@include breakpoint($breakpoint-tablet) {
 		font-size: 18px;
 	}
@@ -32,12 +32,13 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: .5em 0;
-	line-height: 1em;
+	line-height: 1.5em;
 }
 
 h1, h2, h3 {
 	font-family: $type-serif;
 	font-weight: normal;
+	color: $blue;
 }
 
 h1 {
@@ -78,7 +79,7 @@ h6 {
 	font-family: $type-body;
 }
 
-header a {
+header a, footer a {
 	color: $white;
 	text-decoration: none;
 	&:hover {
@@ -96,7 +97,7 @@ header a {
 	line-height: 16px;
 	@include breakpoint($breakpoint-desktop-small) {
 		text-align: right;
-		margin-top: 56px;
+		margin-top: 64px;
 	}
 	li {
 		display: inline-block;
@@ -109,6 +110,7 @@ header a {
 
 // Content
 .content-container {
+	background-color: $white;
 	background-image: url('../images/groovepaper.png');
 }
 
@@ -126,7 +128,6 @@ article time {
 	border-left: 1px solid $blue;
 	margin-left: 2px;
 	padding-left: 1em;
-
 }
 
 // Footer
@@ -136,5 +137,7 @@ article time {
 }
 
 footer {
-	min-height: 40px;
+	text-align: right;
+	padding: 20px 0;
+	font-size: 12px;
 }
