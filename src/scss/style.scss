@@ -1,0 +1,140 @@
+// ------------------------------------
+// Core imports
+// ------------------------------------
+
+@import 'lib/susy';
+@import 'lib/breakpoint';
+@import 'partials/base';
+
+// ------------------------------------
+
+
+// Base
+body {
+	font-family: $type-body;
+	font-size: 14px;
+	background: $offwhite;
+	@include breakpoint($breakpoint-tablet) {
+		font-size: 18px;
+	}
+}
+
+a {
+	color: $orange;
+	text-decoration: none;
+	&:hover {
+		color: $blue;
+	}
+	&:active {
+		color: $blue;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: .5em 0;
+	line-height: 1em;
+}
+
+h1, h2, h3 {
+	font-family: $type-serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 36px;
+	@include breakpoint($breakpoint-tablet) {
+		font-size: 48px;
+	}
+}
+h2 {
+	font-size: 24px;
+	@include breakpoint($breakpoint-tablet) {
+		font-size: 36px;
+	}
+}
+h3 {
+	font-size: 18px;
+	@include breakpoint($breakpoint-tablet) {
+		font-size: 24px;
+	}
+}
+h4 {
+	font-size: 18px;
+}
+h5 {
+	font-size: 16px;
+}
+h6 {
+	font-size: 16px;
+}
+
+// Header
+.header-container {
+	background: $blue;
+	border-bottom: 10px solid $darkblue;
+}
+
+.title h1 {
+	font-family: $type-body;
+}
+
+header a {
+	color: $white;
+	text-decoration: none;
+	&:hover {
+		color: $offwhite;
+	}
+	&:active {
+		color: $offwhite;
+	}
+}
+
+.pages ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 12px;
+	line-height: 16px;
+	@include breakpoint($breakpoint-desktop-small) {
+		text-align: right;
+		margin-top: 56px;
+	}
+	li {
+		display: inline-block;
+		padding: 0 1em 0 0;
+		@include breakpoint($breakpoint-desktop-small) {
+			padding: 0 0 0 1em;
+		}
+	}
+}
+
+// Content
+.content-container {
+	background-image: url('../images/groovepaper.png');
+}
+
+article {
+	margin: 80px 0;
+}
+
+article time {
+	display: block;
+	font-size: 12px;
+	font-family: $type-base;
+	text-transform: uppercase;
+	font-weight: 200;
+	letter-spacing: 1px;
+	border-left: 1px solid $blue;
+	margin-left: 2px;
+	padding-left: 1em;
+
+}
+
+// Footer
+.footer-container {
+	background: $blue;
+	border-top: 10px solid $darkblue;
+}
+
+footer {
+	min-height: 40px;
+}

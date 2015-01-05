@@ -1,0 +1,13 @@
+# Site settings
+title: Sean Connolly
+email: sean.connolly@gmail.com
+description: Sean Connolly Blog
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://sean-connolly.com" # the base hostname & protocol for your site
+twitter_username: vaguity
+github_username:  vaguity
+
+# Build settings
+markdown: kramdown
+
+exclude: [bower.json, gulpfile.js, package.json, gulp, src, node_modules, bower_components]
